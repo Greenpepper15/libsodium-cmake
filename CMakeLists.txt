@@ -281,9 +281,9 @@ target_compile_definitions(${PROJECT_NAME}
 )
 
 # Variables that need to be exported to version.h.in
-set(VERSION 1.0.18)
-set(SODIUM_LIBRARY_VERSION_MAJOR 10)
-set(SODIUM_LIBRARY_VERSION_MINOR 3)
+set(VERSION 1.0.19)
+set(SODIUM_LIBRARY_VERSION_MAJOR 26)
+set(SODIUM_LIBRARY_VERSION_MINOR 1)
 if(SODIUM_MINIMAL)
     set(SODIUM_LIBRARY_MINIMAL_DEF "#define SODIUM_LIBRARY_MINIMAL 1")
 endif()
