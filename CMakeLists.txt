@@ -10,8 +10,8 @@ option(SODIUM_DISABLE_TESTS "Disable tests" OFF)
 option(SODIUM_MINIMAL "Only compile the minimum set of functions required for the high-level API" OFF)
 option(SODIUM_ENABLE_BLOCKING_RANDOM "Enable this switch only if /dev/urandom is totally broken on the target platform" OFF)
 
-file(GLOB_RECURSE LIB_HEADERS_H ${CMAKE_CURRENT_SOURCE_DIR}/*.h)
-file(GLOB_RECURSE LIB_SOUCES_C ${CMAKE_CURRENT_SOURCE_DIR}/*.c)
+file(GLOB_RECURSE LIB_HEADERS_H ${CMAKE_CURRENT_SOURCE_DIR}/src/libsodium/*.h)
+file(GLOB_RECURSE LIB_SOUCES_C ${CMAKE_CURRENT_SOURCE_DIR}/src/libsodium/*.c)
 
 add_library(${PROJECT_NAME}
         ${LIB_HEADERS_H}
